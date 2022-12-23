@@ -1,0 +1,10 @@
+- name: Get Ambari services
+  hosts: all
+  become: yes
+
+  tasks:
+    - localhost_1: hosts info
+    - localhost_2: hosts info
+    - localhost_3: hosts info
+    - localhost_4: hosts info
+    - localhost_5: hosts info
